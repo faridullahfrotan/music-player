@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="player">
+
+        <div class="cover">
+            <img id="music-cover" src="" alt="cover">
+            <audio class="audio" src=""></audio>
+
+        </div>
+        <div class="empty"></div>
+
+        <h2 id="music-title"></h2>
+        <p id="music-artist"></p>
+
+        <div class="time-bar">
+            <span id="current-time"></span>
+
+            <input type="range" id="seek-bar" min="0" max="100" value="">
+
+            <span id="total-time"></span>
+        </div>
+
+        <div class="controls">
+            <button id="prev">⏮</button>
+            <button id="play">
+                <span class="play">▶</span>
+                <span class="pause">❙❙</span>
+            </button>
+            <button id="next">⏭</button>
+        </div>
+
+    </div>
+    <div class="circl"></div>
+
+    <script src="./js/mian.js"></script>
+</body>
+
+</html>

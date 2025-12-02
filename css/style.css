@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(-45deg,rgba(208, 10, 10, 0.386), blue);
+    font-family: Arial, sans-serif;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(6px);
+    height: 100vh;
+    position: relative;
+}
+
+
+.player {
+    width: 320px;
+    height: 320px;
+    background: rgba(225,225,225,0.3);
+    backdrop-filter: blur(12px);
+    padding: 25px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    position: relative;
+}
+.cover{
+    position: absolute;
+    left: 20%;
+    top: -23%;
+}
+.cover img {
+    width: 220px;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+.empty{
+    height: 10rem;
+}
+
+h2 {
+    margin: 18px 0 5px;
+    font-size: 22px;
+}
+
+p {
+    margin: 0;
+    color: rgb(61, 57, 57);
+}
+
+.time-bar {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#seek-bar {
+    width: 70%;
+    height: 2px;
+}
+
+.controls {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.controls button {
+    font-size: 28px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: all 70ms ease-in;
+    color: black;
+}
+.controls button:active {
+    transform: scale(1.3);
+    color: gray;
+}
+.pause{
+    display: none;
+}
+.circl{
+        width: 14rem;
+    position: absolute;
+    background: red;
+    height: 14rem;
+    border-radius: 100%;
+    z-index: -100;
+    top: 49%;
+    filter: blur(3px);
+}
+
