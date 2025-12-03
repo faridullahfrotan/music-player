@@ -6,7 +6,10 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: linear-gradient(-45deg,rgba(208, 10, 10, 0.386), blue);
+    background-image: linear-gradient(to right ,deeppink,rgb(255, 255, 0));
+    background-size: 400% 400%;
+    animation: changebackground 4s infinite;
+    transition: all 3s ease-in-out;
     font-family: Arial, sans-serif;
     background-repeat: no-repeat;
     backdrop-filter: blur(6px);
@@ -95,5 +98,16 @@ p {
     z-index: -100;
     top: 49%;
     filter: blur(3px);
+}
+@keyframes changebackground {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 0%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
 }
 
