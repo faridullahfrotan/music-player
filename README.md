@@ -6,3 +6,5 @@
 ### A simple and modern music player that allows users to play, pause, skip, and manage their favorite songs with ease. It provides a clean interface, smooth controls, and supports multiple audio formats for a better listening experience.and it has a few songs for testing.
 
 ### create with 'HTML' 'CSS' and 'JAVASCRIPT'
+
+[watch music player](https://faridullahfrotan.github.io/music-player/)
